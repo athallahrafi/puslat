@@ -12,14 +12,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('home', [
-        'title' => 'Home',
-        'name' => 'Jenis Alat Berat',
-        'email' => 'rafiathallah@gmail.com'
-    ]);
-});
-Route::get('/home', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\Auth;
+use App\Http\Controllers\Vehicle;
+use App\Http\Controllers\Transaction;
+use App\Http\Controllers\Home;
+// Route::get('/detail', function () {
+//     return view('detail',['title'=>'detail']);
+// });
+Route::get('/', [Home::class, 'index']);
+Route::get('/about', [Home::class, 'about']);
+Route::get('/login', [Auth::class, 'index']);
+Route::get('/daftar', [Auth::class, 'daftar']);
+Route::get('/logout', [Auth::class, 'logout']);
+Route::get('/vehicle', [Vehicle::class, 'index']);
+Route::get('/tentang', [Transaction::class, 'index']);
+Route::get('/sewa', [Transaction::class, 'sewa']);
+Route::get('/riwayat_sewa', [Transaction::class, 'riwayat_sewa']);

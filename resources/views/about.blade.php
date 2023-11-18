@@ -16,7 +16,7 @@
     </div>
 </div>
 <div class="dsp">
-    <div class="container text-center">
+    <div class="container text-center ">
         <div class="row d-flex justify-content-around mt-4">
             <div class=" d-flex flex-column justify-content-center align-items-center shadow-sm" style="width: 15rem;border-radius:15px;">
                 <div class="d-flex justify-content-center align-items-center bg-dark" style="flex-basis: 20%;">
@@ -49,5 +49,17 @@
         </div>
         <a href="#" class="btn btn-warning m-4 shadow" style="font-weight:500;">cari alat lain?</a>
     </div>
+</div>
+<div class="shadow-sm d-flex rounded-2 shadow p-4 gap-3 justify-content-center align-items-center flex-column text-center m-auto" style="height: 80vh;width:95vw;">
+    <h1>Tentang</h1>
+    <p style="font-size: 1.5rem;font-weight:500;">
+        Pusat Sewa Alat Berat Banjarnegara melayani berbagai sewa alat berat di wilayah Indonesia<br>
+        Khususnya Jawa Tengah, Jawa Barat, dan Jogjakarta. Fenomena yang sedang berlangsung saat ini<br>
+        adalah pembangunan gedung terjadi di mana-mana, baik di perkotaan hingga ke pedesaan.<br>
+        Apabila kita amati pembangunan yang dilakukan juga bukan pembangunan gedung atau bangunan<br>
+        kecil namun pembangunan skala besar, misalnya pembangunan gedung perusahaan, hotel atau<br>
+        tempat penginapan, rumah, sekolah, dan lain sebagainya yang tentu memerlukan bantuan armada<br>
+        alat berat untuk proses pengerjaanya
+    </p>
 </div>
 @endsection
