@@ -8,11 +8,13 @@
     <!-- Bootstrap CSS -->
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> --}}
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="datatables/dataTables.bootstrap.css" rel="stylesheet">
+    {{-- <link href="datatables/dataTables.bootstrap.css" rel="stylesheet"> --}}
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="datatables/jquery.dataTables.min.css">
     <script src="jquery/jquery-3.5.1.min.js"></script>
-    <script src="datatables/jquery.dataTables.js"></script>
+    {{-- <link rel="stylesheet" href="datatables/jquery.dataTables.min.css">
+    <script src="datatables/jquery.dataTables.js"></script> --}}
+    <link rel="stylesheet" href="datatables/datatables.css">
+    <script src="datatables/datatables.min.js"></script>
 
     <title>Home | {{ $title }}</title>
     <style>

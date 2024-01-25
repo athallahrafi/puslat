@@ -16,9 +16,12 @@ use App\Http\Controllers\Auth;
 use App\Http\Controllers\Vehicle;
 use App\Http\Controllers\Transaction;
 use App\Http\Controllers\Home;
-// Route::get('/detail', function () {
-//     return view('detail',['title'=>'detail']);
-// });
+Route::get('/side', function () {
+    return view('layouts/side',['title'=>'side']);
+});
+Route::get('/dashboard', function () {
+    return view('layouts/dashboard',['title'=>'dashboard']);
+});
 Route::get('/', [Home::class, 'index']);
 Route::get('/about', [Home::class, 'about']);
 Route::get('/login', [Auth::class, 'index']);

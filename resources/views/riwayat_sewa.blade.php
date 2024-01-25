@@ -2,8 +2,8 @@
 @section('container')
 <div class="mt-5 d-flex flex-column justify-content-center align-items-center" style="width:100vw;">
     <div class="mt-5 mb-5 table data-table d-flex flex-column justify-content-start align-items-center" style="background-color: var(--secondary-color);width:80vw;height:60vh;">
-        <table class="mt-5 mb-5 table table-bordered table-dark" id="riwayat_sewa">
-            <tr>
+        <table class="mt-5 mb-5 table table-responsive row-border" id="riwayat_sewa">
+            {{-- <tr>
                 <th>No</th>
                 <th>Nama Lengkap</th>
                 <th>Nama Alat Berat</th>
@@ -22,6 +22,14 @@
                 <td>28/05/2023</td>
                 <td>100</td>
                 <td>Rp.17.000.000</td>
+            </tr> --}}
+            <tr>
+                <th>Judul</th>
+                <th>Penulis</th>
+            </tr>
+            <tr>
+                <td>Makr</td>
+                <td>Makr</td>
             </tr>
         </table>
     </div>
@@ -31,5 +39,27 @@
         console.log('jquery sudah dimuat');
         $('#riwayat_sewa').dataTable();
     });
+    // $(document).ready(function() {
+    //     $('#riwayat_sewa').dataTable({
+    //         "bJQueryUI": true,
+    //         "sPaginationType": "full_numbers",
+    //         "bPaginate": false,
+    //         "bFilter": true,
+    //         "bSort": true,
+    //         "aaSorting": [
+    //         [1, "asc"]
+    //         ],
+    //         "aoColumnDefs": [{
+    //         "bSortable": false,
+    //         "aTargets": [0]
+    //         }, {
+    //         "bSortable": true,
+    //         "aTargets": [1]
+    //         }, {
+    //         "bSortable": false,
+    //         "aTargets": [2]
+    //         }],
+    //     });
+    // });
 </script>
 @endsection
